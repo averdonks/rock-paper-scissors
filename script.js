@@ -2,6 +2,10 @@
 let computerChoice = "";
 // Create string variable "humanChoice" and set value to ""
 let humanChoice = "";
+// Create int variable "computerScore" and set value to 0
+let computerScore = 0;
+// Create int variable "humanScore" and set value to 0
+let humanScore = 0;
 
 // Create function "getComputerChoice()" that randomly generates a 
 // a choice of rock, paper, or scissors and returns said value
