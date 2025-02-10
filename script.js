@@ -14,8 +14,6 @@ function getComputerChoice() {
     // number between 0 and 2 
     // Note: redeclaring the variable works in this scope
     let randNum = Math.floor(Math.random() * 3);
-    console.log(randNum)
-
     // If the the value generated from randNum equals 0
     // set computerChoice to "rock"
     if (randNum === 0) {
@@ -66,8 +64,38 @@ function getHumanChoice() {
     }
 }
 
+// Create string constant "humanSelection" and set value to
+// returned value from getHumanChoice()
+const humanSelection = getHumanChoice();
+// Create string constant "computerSelection" and set value to
+// returned value from getComputerChoice()
+const computerSelection = getComputerChoice();
+
+// Create function "playRound" that takes humanChoice and computerChoice
+// as arguments and plays a single round
+function playRound(humanChoice, computerChoice) {
+    // If humanChoice equals computerChoice tell user "Tie! You and
+    // the computer both chose <>.
+    if (humanChoice === computerChoice) {
+        console.log("Tie! You and the computer both chose " + humanChoice + ".");
+    // Otherwise, if humanChoice beats computerChoice, tell user "You win!
+    // <humanChoice> beats <computerChoice>" and increment humanScore by one
+    } else if (humanChoice === "rock" && computerChoice === "scissors"
+        || humanChoice === "paper" && computerChoice === "rock"
+        || humanChoice === "scissors" && computerChoice === "paper") {
+            console.log("You win! " + humanChoice + " beats " + computerChoice + ".");
+            humanScore++;
+    // Otherwise, if computerChoice beat humanChoice, tell user "You lose!
+    // <computerChoice> beats <humanChoice>" and increment computerScore by one
+    } else if (humanChoice === "rock" && computerChoice === "paper"
+        || humanChoice === "paper" && computerChoice === "scissors"
+        || humanChoice === "scissors" && computerChoice === "rock") {
+            console.log("You lose! " + computerChoice + " beats " + humanChoice + ".");
+            computerScore++;
+    }
+}
+
 // Testing functionality
-getHumanChoice();
-console.log(humanChoice);
+ playRound(humanSelection, computerSelection);
 
 
