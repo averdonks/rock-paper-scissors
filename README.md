@@ -4,7 +4,7 @@
 
 - In this project, I created a rock paper scissors console game using JavaScript
 - Live preview: https://averdonks.github.io/rock-paper-scissors/
-    - Click the link using the Chrome browser and press `Ctrl + Shift + J` to open Chrome DevTools to view the console output
+    - Click the link using the Chrome browser and press `Ctrl + Shift + J` to open Chrome DevTools to view the console output (You may need to refresh the page or click "Cancel" to start seeing data in the console)
 
 ## Skills
 
