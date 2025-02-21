@@ -9,6 +9,10 @@
     - The game plays until either you or the computer reaches 5 points
     - To replay the game, refresh your browser
 
+## Image Preview
+
+![Preview of the rock paper scissors website](images/game_preview.png)
+
 ## Skills
 
 HTML/CSS
