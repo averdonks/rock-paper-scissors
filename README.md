@@ -2,11 +2,17 @@
 
 ## Description
 
-- In this project, I created a rock paper scissors console game using JavaScript
+- In this project, I created a rock paper scissors game using JavaScript, HTML, and CSS
+- The project started as a console game, but was updated to be interactive using DOM manipulation
 - Live preview: https://averdonks.github.io/rock-paper-scissors/
-    - Click the link using the Chrome browser and press `Ctrl + Shift + J` to open Chrome DevTools to view the console output (You may need to refresh the page or click "Cancel" to start seeing data in the console)
+    - Click the link and select "Rock", "Paper", or "Scissors" using the provided buttons
+    - The game plays until either you or the computer reaches 5 points
+    - To replay the game, refresh your browser
 
 ## Skills
+
+HTML/CSS
+- Layout, structure, and style
 
 JavaScript
 - Variables
@@ -14,10 +20,12 @@ JavaScript
 - Conditionals
 - Loops
 - Functions
+- DOM manipulation and events
 
 Git
 - Version control
 
 ## Reflection
 
-This project was helpful for putting the JavaScript concepts I've been learning into practice. I made extensive use of comments and used pseudocode to plan before most of my coding. Next time, I won't need to be as excessive with comments, but overdoing it was a useful exercise.
+This project was helpful for putting the fundamental JavaScript concepts I've been learning into practice as well as gaining experience with DOM manipulation and events.
+

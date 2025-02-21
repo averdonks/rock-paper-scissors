@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="script.js"></script> -->
+    <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -15,25 +15,27 @@
     </div>
 
     <div class="game">
-        <div class="container">
-            <div id="gameText">Make your choice...</div>
-            <div class="buttons">
-                <div class="button" id="rock">
-                    <img src="./images/rock.png">
-                    <button>Rock</button>
+        <div class="container" id="gameContainer">
+            <div class="gameElements">
+                <div id="gameText">Make your choice...</div>
+                <div class="buttons">
+                    <div class="button" id="rock">
+                        <img src="./images/rock.png">
+                        <button>Rock</button>
+                    </div>
+                    <div class="button" id="paper">
+                        <img src="./images/paper.png">
+                        <button>Paper</button>
+                    </div>
+                    <div class="button" id="scissors">
+                        <img src="./images/scissors.png">
+                        <button>Scissors</button>
+                    </div>
+                </div> 
+                <div class="scores"> 
+                    <div class="player">Player: <span class="playerScore">0</span></div>
+                    <div class="computer">Computer: <span class="computerScore">0</span></div>
                 </div>
-                <div class="button" id="paper">
-                    <img src="./images/paper.png">
-                    <button>Paper</button>
-                </div>
-                <div class="button" id="scissors">
-                    <img src="./images/scissors.png">
-                    <button>Scissors</button>
-                </div>
-            </div> 
-            <div class="scores"> 
-                <div class="playerScore">Player: 0</div>
-                <div class="computerScore">Computer: 0</div>
             </div>
         </div>
     </div>

@@ -20,11 +20,22 @@
     display: flex;
 }
 
-#gameText {
+#gameText,
+.win,
+.lose {
     display: flex;
     align-content: center;
     justify-content: center;
     margin: 64px 0 40px 0;
+}
+
+.win,
+.lose {
+    font-size: 3em;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    gap: 40px;
 }
 
 .buttons {
@@ -49,8 +60,7 @@ button {
 }
 
 button:hover {
-    color: black;
-    border: dashed
+    border: solid 0.14em;
 }
 
 button:active {
@@ -59,10 +69,17 @@ button:active {
     border: none;
 }
 
-
 .scores {
     display: flex;
     justify-content: space-between;
     margin: 64px 0 0 0;
     font-weight: bold;
+}
+
+.player {
+    border-bottom: solid red 0.2em;
+}
+
+.computer {
+    border-bottom: dashed blue 0.2em;
 }
